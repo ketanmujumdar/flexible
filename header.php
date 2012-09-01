@@ -26,10 +26,7 @@
 
 <div id="wrapper">
 	<div id="header">
-		<h1 style="display:inline;"><a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a></h1>
-		<?php if ( function_exists('dynamic_sidebar'))
-			dynamic_sidebar('Header Inside Sidebar');
-		?> 
+		<h1><a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a></h1>
 	</div>
 
   <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'menu_class' => 'nav', 'theme_location' => 'primary-menu' ) ); ?>
