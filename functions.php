@@ -1,5 +1,10 @@
 <?php
 include_once 'libs/sidebar.php';
+/*
+ * Add option pages for adding configuration options
+ */
+include_once 'option_pages/options.php';
+
 
 //Add support for WordPress 3.0's custom menus
 add_action( 'init', 'register_my_menu' );
@@ -8,6 +13,8 @@ add_action( 'init', 'register_my_menu' );
 function register_my_menu() {
 	register_nav_menu( 'primary-menu', __( 'Primary Menu' ) );
 }
+
+
 
 //Some simple code for our widget-enabled sidebar
 $header_inside_sidebar = array(
