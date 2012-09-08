@@ -1,9 +1,9 @@
 <?php
-
 ?>
 
-<div id="flexi_general_settings_page" class="make_me_invisible">
+<div id="flexi_layout_page" style="display:none;" class="make_me_invisible">
 <form class="form-horizontal flexi_general_styling">
+layout
   <div class="control-group">
     <label class="control-label" for="inputEmail">Email</label>
     <div class="controls">

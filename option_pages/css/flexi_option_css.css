@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+
+.flexi_general_styling{
+	border: 8px solid lightGrey;
+	margin: 30px auto;
+	padding: 20px;
+	width: 700px;
+}

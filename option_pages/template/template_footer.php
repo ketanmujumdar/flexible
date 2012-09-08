@@ -5,9 +5,9 @@
 <div id="flexi_footer">
 <!--bottom dock -->
 <div class="dock" id="dock2">
-  		<div class="dock-container2">
-			  <a class="dock-item2" href="#"><span>Home</span><img src="<?php echo get_template_directory_uri().'/option_pages/'; ?>images/home.png" alt="home" /></a> 
-			  <a class="dock-item2" href="#"><span>Contact</span><img src="<?php echo get_template_directory_uri().'/option_pages/'; ?>images/email.png" alt="contact" /></a> 
+  		<div class="dock-container2" id="flexi_settings_doc">
+			  <a class="dock-item2" id="flexi_general_settings_button" href="#flexi_general_settings_page"><span>Settings</span><img src="<?php echo get_template_directory_uri().'/option_pages/'; ?>images/settings.png" alt="home" /></a> 
+			  <a class="dock-item2" id="flexi_layout_settings_button" href="#flexi_layout_page"><span>Layout</span><img src="<?php echo get_template_directory_uri().'/option_pages/'; ?>images/layout.png" alt="contact" /></a> 
 			  <a class="dock-item2" href="#"><span>Portfolio</span><img src="<?php echo get_template_directory_uri().'/option_pages/'; ?>images/portfolio.png" alt="portfolio" /></a> 
 			  <a class="dock-item2" href="#"><span>Music</span><img src="<?php echo get_template_directory_uri().'/option_pages/'; ?>images/music.png" alt="music" /></a> 
 			  <a class="dock-item2" href="#"><span>Video</span><img src="<?php echo get_template_directory_uri().'/option_pages/'; ?>images/video.png" alt="video" /></a> 
@@ -30,7 +30,7 @@
 					maxWidth: 60,
 					items: 'a',
 					itemsText: 'span',
-					container: '.dock-container2',
+					container: '#flexi_settings_doc',
 					itemWidth: 40,
 					proximity: 80,
 					alignment : 'left',
