@@ -3,25 +3,18 @@
 ?>
 
 <div id="flexi_general_settings_page" class="make_me_invisible">
-<form class="form-horizontal flexi_general_styling">
+<form class="form-horizontal flexi_general_styling" id="flexi_general_settings_from">
   <div class="control-group">
-    <label class="control-label" for="inputEmail">Email</label>
+    <label class="control-label" for="flexi_tracking_code">Tracking Code</label>
     <div class="controls">
-      <input type="text" id="inputEmail" placeholder="Email">
+       <textarea rows="6" id="flexi_tracking_code" name="flexi_tracking_code"><?php echo get_option('flexi_tracking_code'); ?></textarea>
     </div>
   </div>
-  <div class="control-group">
-    <label class="control-label" for="inputPassword">Password</label>
-    <div class="controls">
-      <input type="password" id="inputPassword" placeholder="Password">
-    </div>
-  </div>
+  <input type="hidden" id="txttype" name="txttype" value="general_settings">
+  <input type="hidden" id="action" name="action" value="flexi_settings">
   <div class="control-group">
     <div class="controls">
-      <label class="checkbox">
-        <input type="checkbox"> Remember me
-      </label>
-      <button type="submit" class="btn">Sign in</button>
+      <input type="submit" class="btn" id="flexi_general_settings_save" value="Save" />
     </div>
   </div>
 </form>

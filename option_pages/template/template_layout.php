@@ -13,7 +13,7 @@ layout
   <div class="control-group">
     <label class="control-label" for="inputPassword">Password</label>
     <div class="controls">
-      <input type="password" id="inputPassword" placeholder="Password">
+      <input type="text" id="inputName" placeholder="Name">
     </div>
   </div>
   <div class="control-group">
